@@ -53,4 +53,7 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
+INSERT INTO Pizzaiolos (pizzaiolos_id, name) VALUES (0, 'Romain');
+INSERT INTO orders (id_orders, name) VALUES (0, 'order for David');
+
 -- Dump completed on 2023-08-10 18:53:16
