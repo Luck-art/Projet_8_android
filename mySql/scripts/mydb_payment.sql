@@ -52,6 +52,6 @@ UNLOCK TABLES;
 
 
 INSERT INTO orders (id_orders, name) VALUES (0, 'order for David');
-INSERT INTO pizzerias (pizzeria_id, name) VALUES (0, 'Awesome Pizza');
+INSERT INTO order_content (id_order_content, orders_content) VALUES (0, 'command 1');
 
 -- Dump completed on 2023-08-10 18:53:16
