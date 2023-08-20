@@ -50,8 +50,8 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
-INSERT INTO pizzerias (pizzeria_id, name) VALUES (0, 'Awesome Pizza');
-INSERT INTO Ingredients (ingredients_id, name) VALUES (0, 'tomates');
-
+INSERT INTO pizzas (pizza_id, name, price) VALUES
+ (0, 'Four cheese', 35),
+ (1, 'Andalouse', 35);
 
 -- Dump completed on 2023-08-10 18:53:16

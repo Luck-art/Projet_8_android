@@ -54,7 +54,8 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
-INSERT INTO pizzas (pizza_id, name) VALUES (0, 'quatres saisons');
-INSERT INTO customers (customers_id, name) VALUES (0, 'David');
+INSERT INTO orders (id_orders, name) VALUES
+ (0, 'quatres saisons'),
+ (1, 'végétarienne');
 
 -- Dump completed on 2023-08-10 18:53:16

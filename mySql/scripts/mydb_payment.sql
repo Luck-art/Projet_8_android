@@ -51,7 +51,8 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 
-INSERT INTO orders (id_orders, name) VALUES (0, 'order for David');
-INSERT INTO order_content (id_order_content, orders_content) VALUES (0, 'command 1');
+INSERT INTO payment (payment_id, orders_id, status) VALUES
+ (0, 0,  'Cancel'),
+ (1, 1,  'Finish');
 
 -- Dump completed on 2023-08-10 18:53:16

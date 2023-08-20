@@ -50,7 +50,8 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
-INSERT INTO Recettes (recette_id, name) VALUES (0, 'Awesome Pizza');
-INSERT INTO Ingredients (ingredients_id, name) VALUES (0, 'tomates');
+INSERT INTO memo (memo_id, description) VALUES
+ (0, 'Passer une commande pour demain'),
+ (1, 'Informer le chef du manque de courgettes');
 
 -- Dump completed on 2023-08-10 18:53:16
