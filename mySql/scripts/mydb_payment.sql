@@ -19,18 +19,7 @@
 -- Table structure for table `payment`
 --
 
-DROP TABLE IF EXISTS `payment`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `payment` (
-  `payment_id` int NOT NULL,
-  `orders_id` int DEFAULT NULL,
-  `status` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`payment_id`),
-  KEY `orders_key_idx` (`orders_id`),
-  CONSTRAINT `orders_payment_key` FOREIGN KEY (`orders_id`) REFERENCES `orders` (`id_orders`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
-/*!40101 SET character_set_client = @saved_cs_client */;
+
 
 --
 -- Dumping data for table `payment`
@@ -51,8 +40,5 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 
-INSERT INTO payment (payment_id, orders_id, status) VALUES
- (0, 0,  'Cancel'),
- (1, 1,  'Finish');
 
 -- Dump completed on 2023-08-10 18:53:16

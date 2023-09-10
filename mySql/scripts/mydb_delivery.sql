@@ -19,17 +19,7 @@
 -- Table structure for table `delivery`
 --
 
-DROP TABLE IF EXISTS `delivery`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `delivery` (
-  `id_delivery` int NOT NULL,
-  `name` varchar(45) DEFAULT NULL,
-  `id_payment` int DEFAULT NULL,
-  `id_customers` int DEFAULT NULL,
-  PRIMARY KEY (`id_delivery`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
-/*!40101 SET character_set_client = @saved_cs_client */;
+
 
 --
 -- Dumping data for table `delivery`
@@ -49,8 +39,5 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
-INSERT INTO delivery (id_delivery, name) VALUES
- (0, 'delivery one'),
- (1, 'delivery two');
 
 -- Dump completed on 2023-08-10 18:53:16

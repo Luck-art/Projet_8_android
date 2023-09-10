@@ -19,15 +19,7 @@
 -- Table structure for table `pizzerias`
 --
 
-DROP TABLE IF EXISTS `pizzerias`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `pizzerias` (
-  `pizzeria_id` int NOT NULL,
-  `name` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`pizzeria_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
-/*!40101 SET character_set_client = @saved_cs_client */;
+
 
 --
 -- Dumping data for table `pizzerias`
@@ -47,9 +39,7 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
-INSERT INTO pizzerias (pizzeria_id, name) VALUES
- (0, 'Awesome pizza'),
- (1, 'That pizza');
+
 
 
 

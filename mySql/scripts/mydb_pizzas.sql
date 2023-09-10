@@ -19,18 +19,7 @@
 -- Table structure for table `pizzas`
 --
 
-DROP TABLE IF EXISTS `pizzas`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `pizzas` (
-  `pizza_id` int NOT NULL,
-  `name` varchar(45) DEFAULT NULL,
-  `creationTimestamp` datetime DEFAULT NULL,
-  `description` varchar(100) DEFAULT NULL,
-  `price` float DEFAULT NULL,
-  PRIMARY KEY (`pizza_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
-/*!40101 SET character_set_client = @saved_cs_client */;
+
 
 --
 -- Dumping data for table `pizzas`
@@ -50,8 +39,6 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
-INSERT INTO pizzas (pizza_id, name, price) VALUES
- (0, 'Four cheese', 35),
- (1, 'Andalouse', 35);
+
 
 -- Dump completed on 2023-08-10 18:53:16

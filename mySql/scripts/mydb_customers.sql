@@ -19,15 +19,7 @@
 -- Table structure for table `customers`
 --
 
-DROP TABLE IF EXISTS `customers`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `customers` (
-  `id_customers` int NOT NULL,
-  `name` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`id_customers`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
-/*!40101 SET character_set_client = @saved_cs_client */;
+
 
 --
 -- Dumping data for table `customers`
@@ -48,9 +40,6 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 
-INSERT INTO customers (id_customers, name) VALUES
- (0, 'Daniel'),
- (1, 'Jeremy'); 
 
 
 -- Dump completed on 2023-08-10 18:53:16

@@ -19,18 +19,7 @@
 -- Table structure for table `memo`
 --
 
-DROP TABLE IF EXISTS `memo`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `memo` (
-  `memo_id` int NOT NULL,
-  `description` varchar(45) DEFAULT NULL,
-  `recettes_id` int DEFAULT NULL,
-  PRIMARY KEY (`memo_id`),
-  KEY `recettes_key_idx` (`recettes_id`),
-  CONSTRAINT `recettes_key` FOREIGN KEY (`recettes_id`) REFERENCES `recettes` (`recette_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
-/*!40101 SET character_set_client = @saved_cs_client */;
+
 
 --
 -- Dumping data for table `memo`
@@ -50,8 +39,6 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
-INSERT INTO memo (memo_id, description) VALUES
- (0, 'Passer une commande pour demain'),
- (1, 'Informer le chef du manque de courgettes');
+
 
 -- Dump completed on 2023-08-10 18:53:16

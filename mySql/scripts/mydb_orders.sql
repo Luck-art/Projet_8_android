@@ -19,22 +19,7 @@
 -- Table structure for table `orders`
 --
 
-DROP TABLE IF EXISTS `orders`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `orders` (
-  `id_orders` int NOT NULL,
-  `name` varchar(45) DEFAULT NULL,
-  `creationTimestamp` datetime DEFAULT NULL,
-  `id_customers` int DEFAULT NULL,
-  `id_pizzerias` int DEFAULT NULL,
-  PRIMARY KEY (`id_orders`),
-  KEY `customers_key_idx` (`id_customers`),
-  KEY `pizzerias_key_idx` (`id_pizzerias`),
-  CONSTRAINT `customers_key` FOREIGN KEY (`id_customers`) REFERENCES `customers` (`id_customers`),
-  CONSTRAINT `pizzerias_orders_key` FOREIGN KEY (`id_pizzerias`) REFERENCES `pizzerias` (`pizzeria_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
-/*!40101 SET character_set_client = @saved_cs_client */;
+
 
 --
 -- Dumping data for table `orders`
@@ -54,8 +39,6 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
-INSERT INTO orders (id_orders, name) VALUES
- (0, 'quatres saisons'),
- (1, 'végétarienne');
+
 
 -- Dump completed on 2023-08-10 18:53:16

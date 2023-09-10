@@ -19,20 +19,7 @@
 -- Table structure for table `menu`
 --
 
-DROP TABLE IF EXISTS `menu`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `menu` (
-  `menu_id` int NOT NULL,
-  `pizzas_id` int DEFAULT NULL,
-  `pizzerias_id` int DEFAULT NULL,
-  PRIMARY KEY (`menu_id`),
-  KEY `menu_key_idx` (`pizzas_id`),
-  KEY `menu_pizzerias_idx` (`pizzerias_id`),
-  CONSTRAINT `menu_pizzas` FOREIGN KEY (`pizzas_id`) REFERENCES `pizzas` (`pizza_id`),
-  CONSTRAINT `menu_pizzerias` FOREIGN KEY (`pizzerias_id`) REFERENCES `pizzerias` (`pizzeria_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
-/*!40101 SET character_set_client = @saved_cs_client */;
+
 
 --
 -- Dumping data for table `menu`
@@ -53,9 +40,6 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 
-INSERT INTO Menu (menu_id, pizzas_id, pizzerias_id) VALUES
- (0, 0, 0),
- (1, 1, 1);
 
 
 -- Dump completed on 2023-08-10 18:53:16

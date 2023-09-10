@@ -19,22 +19,7 @@
 -- Table structure for table `recettes`
 --
 
-DROP TABLE IF EXISTS `recettes`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `recettes` (
-  `recette_id` int NOT NULL,
-  `pizza_id` int DEFAULT NULL,
-  `ingredients_id` int DEFAULT NULL,
-  `quantity` float DEFAULT NULL,
-  `unit` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`recette_id`),
-  KEY `pizza_id_idx` (`pizza_id`),
-  KEY `ingredients_id_idx` (`ingredients_id`),
-  CONSTRAINT `ingredients_id` FOREIGN KEY (`ingredients_id`) REFERENCES `ingredients` (`ingredients_id`),
-  CONSTRAINT `pizza_id` FOREIGN KEY (`pizza_id`) REFERENCES `pizzas` (`pizza_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
-/*!40101 SET character_set_client = @saved_cs_client */;
+
 
 --
 -- Dumping data for table `recettes`
@@ -54,8 +39,6 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
-INSERT INTO Recettes (recette_id, pizza_id, ingredients_id, quantity ) VALUES
- (0, 0, 0, 5),
- (1, 1, 1, 7);
+
 
 -- Dump completed on 2023-08-10 18:53:16

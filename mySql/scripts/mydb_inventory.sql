@@ -19,22 +19,7 @@
 -- Table structure for table `inventory`
 --
 
-DROP TABLE IF EXISTS `inventory`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `inventory` (
-  `inventory_id` int NOT NULL,
-  `ingredients_id` int DEFAULT NULL,
-  `pizzerias_id` int DEFAULT NULL,
-  `quantity` int DEFAULT NULL,
-  `unit` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`inventory_id`),
-  KEY `pizzerias_key_id` (`pizzerias_id`),
-  KEY `ingredients_key_idx` (`ingredients_id`),
-  CONSTRAINT `ingredients_key` FOREIGN KEY (`ingredients_id`) REFERENCES `ingredients` (`ingredients_id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `pizzerias_key` FOREIGN KEY (`pizzerias_id`) REFERENCES `pizzerias` (`pizzeria_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
-/*!40101 SET character_set_client = @saved_cs_client */;
+
 
 --
 -- Dumping data for table `inventory`
@@ -54,8 +39,6 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
-INSERT INTO inventory (inventory_id, ingredients_id, pizzerias_id, quantity) VALUES
- (0, 0, 0, 5),
- (1, 1, 1, 5);
+
 
 -- Dump completed on 2023-08-10 18:53:16

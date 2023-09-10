@@ -19,22 +19,7 @@
 -- Table structure for table `cook`
 --
 
-DROP TABLE IF EXISTS `cook`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `cook` (
-  `cook_id` int NOT NULL,
-  `orders_content_id` int DEFAULT NULL,
-  `pizzaiolos_id` int DEFAULT NULL,
-  `status` varchar(45) DEFAULT NULL,
-  `commentary` varchar(100) DEFAULT NULL,
-  PRIMARY KEY (`cook_id`),
-  KEY `pizzaiolos_key_idx` (`pizzaiolos_id`),
-  KEY `orders_content_key_idx` (`orders_content_id`),
-  CONSTRAINT `orders_content_key` FOREIGN KEY (`orders_content_id`) REFERENCES `orders_content` (`id_orders_content`),
-  CONSTRAINT `pizzaiolos_key` FOREIGN KEY (`pizzaiolos_id`) REFERENCES `pizzaiolos` (`pizzaiolos_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
-/*!40101 SET character_set_client = @saved_cs_client */;
+
 
 --
 -- Dumping data for table `cook`
@@ -54,8 +39,6 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
-INSERT INTO cook (cook_id, orders_content_id, pizzaiolos_id, status) VALUES
- (0, 1, 1, 'finish'),
- (1, 2, 2, 'in progress');
+
 
 -- Dump completed on 2023-08-10 18:53:16
